@@ -76,7 +76,6 @@
     "deconstruct-number-format": "0.0.1"
   },
   "devDependencies": {
-    "@monastic.panic/component-playground": "^2.0.0",
     "babel-cli": "^6.7.5",
     "babel-core": "^6.7.6",
     "babel-eslint": "^6.0.2",

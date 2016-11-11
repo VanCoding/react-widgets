@@ -61,6 +61,7 @@ export default React.createClass({
         readOnly={readOnly}
         onChange={this.handleChange}
         onBlur={this.handleBlur}
+		onKeyDown={this.handleEnter}
       />
     )
   },
@@ -81,6 +82,10 @@ export default React.createClass({
       this._needsFlush = false
       onChange(date, formatDate(date, format, culture))
     }
+  },
+
+  handleEnter(event) {
+  	if(event.keyCode == 13) this.handleBlur(event);
   },
 
   focus(){
